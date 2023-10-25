@@ -20,9 +20,9 @@ jobs:
         run: ./mvnw clean package spring-boot:repackage
 
         uses: actions/upload-artifact@v3
-              with:
-                name: auth_service
-                path: src/target
+        with:
+          name: auth_service
+          path: src/target
 
   run_test:
     needs: build
